@@ -124,3 +124,26 @@ a.info-box{
    height: 40px;
 
 }
+
+/*#################### INFO BOX FULL ####################*/
+
+#info-box-full{
+
+   background-color: rgba(255, 255, 255, 0.8);
+   width: 90%;
+   height: auto;
+   display: block;
+   margin: auto;
+   margin-top:12px ;
+   padding: 10px;
+}
+
+#info-box-full img{
+  width: 100%;
+}
+
+#info-box-full h3{
+   text-align: center;
+   color: #572800;
+
+}
