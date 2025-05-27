@@ -172,3 +172,33 @@ table{
 td{
   border-top:1px solid #572800;
 }
+
+/*#################### FORM ####################*/
+
+input{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  border: 1px solid #572800;
+
+}
+
+textarea{
+  width: 100%;
+  height: 100%;
+  margin: 12px 0;
+  border: 1px solid #929292;
+
+}
+
+.button{
+  display: block;
+    background-color: forestgreen;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+    padding: 8px0;
+}
