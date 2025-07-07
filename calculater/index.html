@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1" style="width: 200px; height: 200px;">
+        <tr>
+            <td colspan="4"><input type="text" value="0" id="inputBox"></td>
+           
+        </tr>
+        <tr>
+            <td onclick="pressButton(7)" >7</td>
+            <td onclick="pressButton(8)">8</td>
+            <td onclick="pressButton(9)">9</td>
+            <td>X</td>
+        <tr>
+        <tr>
+            <td onclick="pressButton(4)">4</td>
+            <td onclick="pressButton(5)">5</td>
+            <td onclick="pressButton(6)">6</td>
+            <td>-</td>
+        <tr>
+        <tr>
+            <td onclick="pressButton(1)">1</td>
+            <td onclick="pressButton(2)">2</td>
+            <td onclick="pressButton(3)">3</td>
+            <td>+</td>
+        <tr>
+        <tr>
+            <td colspan="2" onclick="pressButton('0')">0</td>
+            <td>AC</td>
+            <td>/</td>
+        <tr>
+        <tr>
+            <td colspan="4">=</td>
+        <tr>          
+    </table>
+    <script>
+
+        var number1 ;
+        var newLine = true;
+
+        function pressButton(userInput){
+                if(newLine){
+                    document.getElementById('inputBox').value = userInput;
+                    number1 = userInput;
+                    newLine = false;
+                }else{
+                    document.getElementById('inputBox').value = number1*10 + userInput;
+                    newLine = true;
+
+                }
+            }
+
+         function operationButton(){
+            
+         }
+    </script>
+</body>
+</html>
